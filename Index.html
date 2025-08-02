@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Alex - Criador de Conteúdo</title>
+    <!-- Incluindo Tailwind CSS para um design rápido e moderno -->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="antialiased min-h-screen">
+    
+    <!-- Cabeçalho (Header) da página -->
+    <header class="p-6 md:p-8 bg-black bg-opacity-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold neon-text tracking-widest">A<span class="text-white">LEX</span> SANDRO</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#sobre-mim" class="text-lg hover:underline underline-offset-4 neon-text transition-all duration-300">Sobre Mim</a></li>
+                <li><a href="#portfolio" class="text-lg hover:underline underline-offset-4 neon-text transition-all duration-300">Projetos</a></li>
+                <li><a href="#contato" class="text-lg hover:underline underline-offset-4 neon-text transition-all duration-300">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Main Content) - Sobre Mim -->
+    <main class="container mx-auto p-6 md:p-8 mt-12 md:mt-20">
+        <section id="sobre-mim" class="text-center mb-20 max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 neon-text">Sobre Mim</h2>
+            <!-- Alinhamento da foto e texto ajustado para o topo -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                <!-- Seção para a sua foto -->
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <!-- 
+                        ATENÇÃO: Substitua o link da imagem por sua própria foto.
+                        A imagem de placeholder tem 300x300 pixels.
+                    -->
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLsJzK2ZHV4kI1pc1YJ5qJr13T-_1W5KlCGybypiG114in88MQ=s288-c-no" alt="Foto de perfil" class="w-full h-auto rounded-full border-2 border-[#00f0ff] object-cover shadow-lg hover:shadow-[0_0_15px_#00f0ff]">
+                </div>
+                <!-- Seção para o texto de apresentação -->
+                <div class="w-full md:w-2/3 text-left">
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Olá! Meu nome é Alex, sou um profissional apaixonado por contar histórias através da imagem. Com experiência em **videomaker e social media**, minha missão é transformar ideias em conteúdo visual atraente e estratégico.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Domino a arte da edição de vídeo, captação de imagens, e crio narrativas que geram engajamento. Minha abordagem combina **criatividade e análise de dados**, garantindo que cada projeto não apenas impressione visualmente, mas também alcance os objetivos de comunicação e marketing.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Além das ferramentas de edição, tenho um olhar apurado para tendências digitais e estratégias de conteúdo, ajudando marcas a se conectarem de forma autêntica com seu público nas redes sociais.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Portfólio -->
+        <section id="portfolio" class="mb-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-10 neon-text">
+                Projetos Recentes
+            </h1>
+            <p class="text-center text-lg text-gray-300 mb-16 max-w-2xl mx-auto">
+                Uma amostra do meu trabalho como videomaker e social media, combinando estética e resultados.
+            </p>
+
+            <!-- Grid de Vídeos do Portfólio -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card de Vídeo 1 -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                        <!-- 
+                            ATENÇÃO: Substitua o link do 'src' pelo link de INCORPORAÇÃO do seu vídeo.
+                            Você pode obter este link no YouTube, Vimeo ou Google Drive.
+                            Exemplo de link do YouTube: https://www.youtube.com/embed/SEU_VIDEO
+                            Exemplo de link do Vimeo: https://player.vimeo.com/video/SEU_VIDEO
+                        -->
+                        <iframe src="https://drive.google.com/file/d/1xNDa4l9UlOERYqvfDiojGQn21TsEPoTV/preview"
+                        width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text">Vídeo da Pré-Conferência</h3>
+                    <p class="text-sm text-gray-400">
+                      Vídeo que compila os principais momentos e as discussões-chave da pré-conferência. O objetivo é documentar o planejamento e o alinhamento para o evento principal.
+                    </p>
+                </div>
+
+                <!-- Card de Vídeo 2 -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                        <iframe src="https://drive.google.com/file/d/1xKKwCU_FdWpZ44IuDQrNNl9LFEGkIzS4/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text">Célula Geração Elleita</h3>
+                    <p class="text-sm text-gray-400">
+                        Registro visual das atividades e valores da Célula Geração Elleita. O conteúdo explora a identidade do grupo, sua missão e as iniciativas em andamento.
+                    </p>
+                </div>
+
+                <!-- Card de Vídeo 3 -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                     <iframe src="https://drive.google.com/file/d/1xl0ED64VrHmnf0jCeTiTs9HequTVLWUY/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text">Chamada Geração Flame</h3>
+                    <p class="text-sm text-gray-400">
+                       Vídeo promocional focado em divulgar o evento Geração Flame. A produção visa gerar expectativa e mobilizar o público-alvo, destacando a proposta e a energia do evento.
+                </div>
+
+                <!-- Card de Vídeo 4: Exemplo de espaço para mais vídeos -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                        <iframe src="https://drive.google.com/file/d/1xyADXyHWyPhhKBLBTG6lMhZcRIa-CM0l/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text">Trailer Oficial da Conferência</h3>
+                    <p class="text-sm text-gray-400">
+                      Trailer oficial da conferência. A produção apresenta uma prévia do evento, com o objetivo de despertar o interesse e incentivar a participação do público.
+                    </p>
+                </div>
+                
+                <!-- Card de Vídeo 5: Exemplo de espaço para mais vídeos -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                       <iframe src="https://drive.google.com/file/d/1xQVDbmf9Gn1_JWd-pax0Cl5WXhOwbyf7/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text">Divulgação da Academia</h3>
+                    <p class="text-sm text-gray-400">
+                       Material de divulgação para a academia, destacando a infraestrutura, equipamentos e o ambiente de treino. O vídeo serve como uma ferramenta de marketing para atrair novos clientes.
+                    </p>
+                </div>
+                
+                <!-- Card de Vídeo 6: Exemplo de espaço para mais vídeos -->
+                <div class="portfolio-card p-4 rounded-lg">
+                    <div class="video-container rounded-lg overflow-hidden mb-4">
+                       <iframe src="https://drive.google.com/file/d/1xGP5rS2vBAMvwBDVKu-o6V80romWwExT/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-text"> visita ao bioparque (feito para uecsa)</h3>
+                    <p class="text-sm text-gray-400">
+                       Um registro da visita ao Bioparque, explorando a diversidade da fauna e flora local. O vídeo destaca a importância da preservação e da educação ambiental, capturando momentos de aprendizado e contato com a natureza.
+                    </p>
+                </div>
+
+                <!-- Para adicionar mais vídeos, basta copiar e colar um dos blocos acima -->
+
+            </div>
+        </section>
+    </main>
+    
+    <!-- Seção de Contato -->
+    <section id="contato" class="bg-black bg-opacity-50 p-6 md:p-12 mt-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 neon-text">Contato</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
+                Pronto para transformar sua ideia em um projeto visual incrível? Entre em contato comigo!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                <!-- Botão para WhatsApp -->
+                <a href="https://wa.me/5596992072939" target="_blank" class="bg-transparent text-white neon-border px-8 py-3 rounded-full text-lg font-bold hover:bg-[#00f0ff] hover:text-[#0a0a1a] transition-all duration-300">
+                    WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/in/develop-alex-sandro?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="bg-transparent text-white neon-border px-8 py-3 rounded-full text-lg font-bold hover:bg-[#00f0ff] hover:text-[#0a0a1a] transition-all duration-300">
+                    LinkedIn
+                </a>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="text-center text-sm text-gray-500 py-6 mt-10">
+        © 2025 Alex. Todos os direitos reservados.
+    </footer>
+ 
+</body>
+</html>

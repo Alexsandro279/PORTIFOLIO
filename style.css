@@ -1,0 +1,70 @@
+ /* Definindo uma fonte futurista */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            font-family: 'Orbitron', sans-serif;
+            color: #00f0ff; /* Cor de texto neon */
+            background-color: #0a0a1a; /* Fundo escuro */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Efeito de brilho neon para os botões e títulos (agora mais suave) */
+        .neon-text {
+            text-shadow: 0 0 3px #00f0ff, 0 0 6px #00f0ff, 0 0 10px #00f0ff;
+        }
+        .neon-border {
+            border-color: #00f0ff;
+            box-shadow: 0 0 3px #00f0ff;
+            transition: all 0.3s ease-in-out;
+        }
+        .neon-border:hover {
+            box-shadow: 0 0 8px #00f0ff, 0 0 15px #00f0ff;
+        }
+
+        /* Estilo para o cartão do portfólio com efeito de vidro */
+        .portfolio-card {
+            background: rgba(13, 13, 26, 0.5); /* Fundo com transparência */
+            backdrop-filter: blur(10px); /* Efeito de vidro desfocado */
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-10px) rotateY(5deg);
+            box-shadow: 0 10px 20px rgba(0, 240, 255, 0.3);
+        }
+        
+        /* Ajuste do iframe para os vídeos */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        } 
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
